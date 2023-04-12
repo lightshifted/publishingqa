@@ -16,13 +16,18 @@ source venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-### 4. Initialize Motörhead Server
+### 4. Clone Motörhead Repository
+```bash
+git clone https://github.com/getmetal/motorhead
+```
+
+### 5. Initialize Motörhead Server
 From `motorhead` directory, run the following command:
 ```bash
 docker-compose build && docker-compose up
 ```
 
-### 5. Start Flask Server
+### 6. Start Flask Server
 From `root` directory, run the following command:
 ```bash
 python app.py
@@ -41,6 +46,8 @@ Press CTRL+C to quit
  * Debugger is active!
  * Debugger PIN: 367-912-636
  ```
+
+ ### 7. Update `.env` File With OpenAI API Key
 
 ## API Endpoints
 At the moment, endpoints are available through Postman
